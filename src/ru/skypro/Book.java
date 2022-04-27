@@ -36,7 +36,7 @@ public class Book {
         if (this == other) {
             return true;
         }
-        if (this.getClass() != other.getClass() && other.getClass() != null) {
+        if (this.getClass() != other.getClass() || other.getClass() == null) {
             return false;
         }
         Book b2 = (Book) other;

@@ -25,7 +25,7 @@ public class Author {
         if (this == other) {
             return true;
         }
-        if (this.getClass() != other.getClass() && other.getClass() != null) {
+        if (this.getClass() != other.getClass() || other.getClass() == null) {
             return false;
         }
         Author b2 = (Author) other;
