@@ -25,6 +25,7 @@ public class Author {
         if (this == other) {
             return true;
         }
+        //я тут немного облажалась, поэтому исправляю
         if (this.getClass() != other.getClass() || other.getClass() == null) {
             return false;
         }
